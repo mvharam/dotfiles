@@ -1,0 +1,77 @@
+/* font */
+st*font: Fira Code:pixelsize=10:antialias=true:autohint=true
+URxvt*font: xft:Iosevka:pixelsize=12:style=Regular
+URxvt.letterSpace: 1
+URxvt.title: Urxvt
+
+! Gruber-Darker
+URxvt*foreground: #e4e4ef
+URxvt*background: #181818
+URxvt*color0:  #2E3436
+URxvt*color1:  #a40000
+URxvt*color2:  #4E9A06
+URxvt*color3:  #C4A000
+URxvt*color4:  #3465A4
+URxvt*color5:  #75507B
+URxvt*color6:  #ce5c00
+URxvt*color7:  #babdb9
+URxvt*color8:  #555753
+URxvt*color9:  #EF2929
+URxvt*color10: #8AE234
+URxvt*color11: #FCE94F
+URxvt*color12: #729FCF
+URxvt*color13: #AD7FA8
+URxvt*color14: #fcaf3e
+URxvt*color15: #EEEEEC
+
+/* !! brogrammer: */
+ *.foreground:  #d6dbe5 
+ *.background:  #131313 
+ *.color0:      #1f1f1f 
+ *.color8:      #d6dbe5 
+ *.color1:      #f81118
+ *.color9:      #de352e 
+ *.color2:      #2dc55e 
+ *.color10:     #1dd361
+ *.color3:      #ecba0f 
+ *.color11:     #f3bd09 
+ *.color4:      #2a84d2 
+ *.color12:     #1081d6 
+ *.color5:      #4e5ab7 
+ *.color13:     #5350b9
+ *.color6:      #1081d6 
+ *.color14:     #0f7ddb 
+ *.color7:      #d6dbe5 
+ *.color15:     #ffffff 
+ *.colorBD:     #d6dbe5 
+
+/* urxvt setup */
+!URxvt.geometry: 300x100
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: false
+URxvt.scrollstyle: rxvt
+URxvt*saveLines: 16384
+! The string will be interpreted as if typed into the shell as-is.
+! In this example, printing will be disabled altogether.
+URxvt.print-pipe: "cat > /dev/null"
+URxvt.iconFile:    /usr/share/icons/hicolor/scalable/apps/Terminal.svg
+URxvt.perl-ext-common: default,selection-to-clipboard,matcher,keyboard-select,font-size,resize-font
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.clipboard.autocopy: true
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
